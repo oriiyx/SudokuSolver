@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuSolver
+namespace SudokuSolver.Data
 {
-    interface ICar
+    class SudokuMap
     {
+        public int StartRow { get; set; }
+        public int StartCol { get; set; }
     }
 }
