@@ -25,7 +25,7 @@ namespace SudokuSolver.Workers
             return key.ToString();
         }
 
-        public bool IsSolver(int[,] sudokuBoard)
+        public bool IsSolved(int[,] sudokuBoard)
         {
             //getlength v tem primeru izbere multidimentional array katerega želimo (prvi element ali drugi)
             for (int row = 0; row < sudokuBoard.GetLength(0); row++)
