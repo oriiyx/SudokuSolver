@@ -23,7 +23,8 @@ namespace SudokuSolver.Strategies
             // initialize all of our strategies
             List<ISudokuStrategy> strategies = new List<ISudokuStrategy>()
             {
-
+                new SimpleMarkUpStrategy(_sudokuMapper),
+                new NakedPairStrategy(_sudokuMapper)
             };
 
             //generate the state for the initial state
